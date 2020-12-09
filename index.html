@@ -6,13 +6,15 @@
         Translate | Banana
     </title>
     <style>
+        :root {
+            --grey-color: #F9A8D4;
+        }
 
-        :root{
-          --grey-color : #D1D5DB;
-        }
-        body{
+        body {
             margin: 0rem;
+            padding: 0rem;
         }
+
         #output-section {
 
             border: 1px black solid;
@@ -20,14 +22,15 @@
             height: 15vh;
             margin: auto;
             padding: 1rem;
-            /* margin-top: 0rem; */
+            margin-bottom: 10rem;
 
         }
 
         #btn-translate {
             margin: auto;
+            margin-bottom: 2rem;
             text-align: center;
-            background-color:#D1D5DB;
+            background-color: #D1D5DB;
         }
 
         #txt-input {
@@ -35,46 +38,57 @@
             width: 80%;
             height: 15vh;
             margin: auto;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            
             padding: 1rem;
 
         }
-        .btn{
+
+        .btn {
             text-align: center;
             margin: 1rem;
         }
-        h1{
-           
+
+        h1 {
+
             text-align: center;
         }
-        .navigation {
-    background-color: var(--grey-color);
-    color: white;
-    padding: .3rem;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-}
+
+        header {
+            background-color: var(--grey-color);
+            
+            padding: .3rem;
+        }
+        footer{
+            background-color: var(--grey-color);
+            padding: 2rem 0rem;
+           text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navigation" > 
-        <h1 >Translate text in to Banana</h1>
-    </nav>
+    <header class="">
+        <h1>Translate text in to Banana</h1>
+    </header>
 
-    
+
 
     <textarea name="" id="txt-input" cols="40" rows="7"
         placeholder="Type the text here you want to translate."></textarea>
 
-        <div class="btn">
-            <button id="btn-translate">Translate</button>
-        </div>
-   
-    <div  style="text-align: center; margin: 1rem;"> Translated text will be shown below ⬇️</div>
+    <div class="btn">
+        <button id="btn-translate">Translate</button>
+    </div>
+
+    <div style="text-align: center; margin: 1rem;"> Translated text will be shown below ⬇️</div>
 
     <div id="output-section"></div>
     <footer>
-        
+ <h2>About</h2>
+ You can translate any text using this application. Internally this application uses 
+ The Great Tanay Pratap's API to translate the data.
     </footer>
 </body>
 
