@@ -21,7 +21,14 @@ function translate(){
     console.log(input);
 
     
-    fetch(constructUrl(input)).then(res => res.json()).then(json => console.log(json));
+    fetch(constructUrl(input))
+    .then(res => res.json())
+    .then(json => {
+        let displayText =  json.contents.translated; 
+
+        outputText.innerText = displayText;
+    }
+        );
 }
 
 
