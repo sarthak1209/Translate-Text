@@ -15,8 +15,8 @@ function constructUrl(input){
 
 
 
-//console.log(queryUrl);
-function translate(){
+
+function clickHandeller(){
     var input = inputText.value;
     console.log(input);
 
@@ -32,5 +32,5 @@ function translate(){
 }
 
 
-translateButton.addEventListener("click", translate);
+translateButton.addEventListener("click", clickHandeller);
 
