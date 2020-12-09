@@ -1,21 +1,83 @@
 <!Doctype html>
 <html>
-    <head>
-        <title>
-            Translate | Banana
-        </title>
-    </head>
 
-    <body>
+<head>
+    <title>
+        Translate | Banana
+    </title>
+    <style>
 
-        <h1>Translate text in to Banana</h1>
+        :root{
+          --grey-color : #D1D5DB;
+        }
+        body{
+            margin: 0rem;
+        }
+        #output-section {
 
-        <textarea name="" id="txt-input" cols="30" rows="10" placeholder="Type the text here you want to translate."></textarea>
-         
-        <button id="btn-translate">Translate</button>
+            border: 1px black solid;
+            width: 80%;
+            height: 15vh;
+            margin: auto;
+            padding: 1rem;
+            /* margin-top: 0rem; */
 
-        <div id="output-section"> translated text will be shown here</div>
-    </body>
+        }
 
-    <script src="app.js" type="text/javascript"></script>
+        #btn-translate {
+            margin: auto;
+            text-align: center;
+            background-color:#D1D5DB;
+        }
+
+        #txt-input {
+            display: block;
+            width: 80%;
+            height: 15vh;
+            margin: auto;
+            padding: 1rem;
+
+        }
+        .btn{
+            text-align: center;
+            margin: 1rem;
+        }
+        h1{
+           
+            text-align: center;
+        }
+        .navigation {
+    background-color: var(--grey-color);
+    color: white;
+    padding: .3rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navigation" > 
+        <h1 >Translate text in to Banana</h1>
+    </nav>
+
+    
+
+    <textarea name="" id="txt-input" cols="40" rows="7"
+        placeholder="Type the text here you want to translate."></textarea>
+
+        <div class="btn">
+            <button id="btn-translate">Translate</button>
+        </div>
+   
+    <div  style="text-align: center; margin: 1rem;"> Translated text will be shown below ⬇️</div>
+
+    <div id="output-section"></div>
+    <footer>
+        
+    </footer>
+</body>
+
+<script src="app.js" type="text/javascript"></script>
+
 </html>
