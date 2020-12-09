@@ -12,7 +12,10 @@ function constructUrl(input){
     //console.log(url);
     return url;
 }
-
+ function errorHandeler(error){
+     console.log("An error occured", error);
+     alert("Server is not responding!!!, Please try again after some time..")
+ }
 
 
 
@@ -27,8 +30,7 @@ function clickHandeller(){
         let displayText =  json.contents.translated; 
 
         outputText.innerText = displayText;
-    }
-        );
+    }).catch(errorHandeler);
 }
 
 
