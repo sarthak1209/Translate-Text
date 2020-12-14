@@ -4,7 +4,8 @@ var translateButton = document.querySelector("#btn-translate");
 var outputText = document.querySelector("#output-section");
 
 
-var serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+var serverUrl = "https://api.funtranslations.com/translate/minion.json";
+
 
 
 function constructUrl(input) {
